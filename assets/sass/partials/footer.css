@@ -1,0 +1,46 @@
+footer {
+	background-color: black;
+	color: white;
+	position: fixed;
+	left: 0;
+	bottom: 0;
+	height: 65px;
+	width: 100%;
+}
+
+ul#footer {
+	list-style-type: none;
+	margin: 0;
+	padding: 0;
+	overflow: hidden;
+}
+
+ul#footer .left {
+	padding-top: 15px;
+	text-align:left;
+	float:left;
+	display: block;
+}
+ul#footer .right {
+	padding-top: 15px;
+	float:right;
+	text-align:right;
+	display: block;
+}
+#signOut {
+	-webkit-transition-duration: 0.4s; /* Safari */
+	transition-duration: 0.4s;
+	border: red;
+	background-color: red;
+	color: white;
+}
+#signOut:hover {
+	background-color: white;
+	border: red;
+	color: red;
+}
+
+
+#learn-more a {
+	color: grey;
+}

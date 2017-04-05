@@ -1,0 +1,58 @@
+#ideaGenerator {
+  position: fixed;
+  top: 55px;
+  left: 0;
+  width: 50%;
+  height: 100%;
+  background-image: url(../../images/idea-generator.png);
+  color: white;
+}
+#techGenerator {
+  position: fixed;
+  top: 55px;
+  right: 0;
+  width: 50%;
+  height: 100%;
+  background-image: url(../../images/tech-generator.png);
+  color: white;
+}
+.generator-box {
+  padding-top: 40%;
+  padding-left: 60px;
+}
+.generator-button {
+  -webkit-transition-duration: 0.4s; /* Safari */
+  transition-duration: 0.4s;
+  border: blue;
+  background-color: blue;
+  color: white;
+}
+.generator-button:hover {
+  background-color: white;
+  border: blue;
+  color: blue;
+}
+
+@media screen and (max-width: 600px) {
+  .generator-box {
+    padding-top: 15%;
+
+  }
+  #ideaGenerator {
+    position: relative;
+    top: 0px;
+    left: 0;
+    width: 100%;
+    background-image: url(../../images/idea-generator.png);
+    color: white;
+  }
+  #techGenerator {
+    position: relative;
+    top: 0px;
+    right: 0;
+    width: 100%;
+    background-image: url(../../images/tech-generator.png);
+    color: white;
+  }
+
+}
