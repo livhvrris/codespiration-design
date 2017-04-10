@@ -1,63 +1,127 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-	<meta charset="utf-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1">
-    <title>Dashboard | CodeSpiration</title>
+
+  <!-- Basic Metas
+  –––––––––––––––––––––––––––––––––––––––––––––––––– -->
+  <meta charset="utf-8">
+  <title>Dashboard | CodeSpiration Beta</title>
+  <meta name="description" content="text/html; charset=UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1.0">
+
+  <!-- Mobile Specific Metas
+  –––––––––––––––––––––––––––––––––––––––––––––––––– -->
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+
+  <!-- FONT
+  –––––––––––––––––––––––––––––––––––––––––––––––––– -->
+  <link href="//fonts.googleapis.com/css?family=Raleway:400,300,600" rel="stylesheet" type="text/css">
+
+  <!-- CSS
+  –––––––––––––––––––––––––––––––––––––––––––––––––– -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/meyer-reset/2.0/reset.min.css">
+  <link rel="stylesheet" href="../assets/skeleton/normalize.css">
+  <link rel="stylesheet" href="../assets/skeleton/skeleton.css">
+  <link rel="stylesheet" href="../assets/sass/partials/general.css">
+  <link rel="stylesheet" href="../assets/sass/partials/navigation.css">
+  <link rel="stylesheet" href="../assets/sass/partials/footer.css">
+  <link rel="stylesheet" href="../assets/sass/partials/generator.css">
+  <link rel="stylesheet" href="../assets/sass/partials/modal.css">
+  <link rel="stylesheet" href="../assets/sass/partials/dashboard-sidebar.css">
+
+  <!-- Scripts
+  –––––––––––––––––––––––––––––––––––––––––––––––––– -->
+  <script src='http://cdnjs.cloudflare.com/ajax/libs/jquery/2.1.3/jquery.min.js'></script>
+  <script src="../assets/js/navigation.js"></script>
+  <script src="../assets/js/modal.js"></script>
+
+  <!-- Favicon
+  –––––––––––––––––––––––––––––––––––––––––––––––––– -->
+  <link rel="icon" type="image/png" href="images/favicon.png">
+
+  <style>
+
+  </style>
 
 </head>
-<body>
-	<!-- Navbar -->
-	<nav>
-		<a href="/">
-			<span>CODE</span>
-			<span>SPIRATION</span>
-		</a>
-		<ul>
-			<li>SUBMISSIONS</li>
-			<li>GENERATOR</li>
-			<li>DASHBOARD</li>
-		</ul>
-	</nav>
 
-	<!-- Main -->
+<body>
+
+  <!-- Header / Navigation
+  –––––––––––––––––––––––––––––––––––––––––––––––––– -->
+  <header>
+
+    <nav class="topnav" id="myTopnav">
+      <div class="container">
+        <a href="#home" class="nav-logo"><img src="../assets/images/logo.png" style="max-height: 17px;"></a>
+        <a href="#submissions">Submissions</a>
+        <a href="#generator">Generator</a>
+        <a href="#dashboard">Dashboard</a>
+        <a href="javascript:void(0);" style="font-size:15px;" class="icon" onclick="myFunction()">&#9776;</a> <!-- Mob. Nav Icon -->
+      </div>
+    </nav>
+
+  </header>
+
+  <!-- Primary Layout / Main
+  –––––––––––––––––––––––––––––––––––––––––––––––––– -->
 	<main>
-		<div id="project-list">
-			<ul>
-				<li>
-					<p>PROJECT NAME</p>
-					<p>STATUS</p>
-					<p>TEAM</p>
-					<p>TECH</p>
-					<a href="#">IDEA</a>
-				</li>
-			</ul>
-		</div>
-		<div id="sidebar">
-			<div id="user-info">
-				<img class="user-image"></img>
-				<p class="username">USERNAME</p>
-				<p class="name">NAME</p>
-				<p class="email">EMAIL</p>
-			</div>
-		</div>
-		<div id="techbar">
-			<div class="known-tech">
-				<ul>
-					<li><a href="#">DOCUMENTATION</a></li>
-				</ul>
-			</div>
-			<div class="learn-tech">
-				<ul>
-					<li><a href="#">DOCUMENTATION</a></li>
-				</ul>
-			</div>
-		</div>
+    <div class="row">
+
+  		<div id="sidebar" class="three columns">
+  			<div id="user-info">
+          <div class="row">
+    				<a><img class="user-image" src="../assets/images/user-image.png"></img></a>
+          </div>
+          <div class="row">
+    				<a>@ <!-- @ symbol before username -->
+              <a class="sidebar-username">USERNAME</a>
+            </a>
+          </div>
+          <div class="row">
+    				<a class="sidebar-name">FIRSTNAME LASTNAME</a>
+          </div>
+          <div class="row">
+    				<a class="sidebar-email">EMAIL@EMAIL.COM</a>
+          </div>
+  			</div>
+  		</div>
+
+      <div id="project-list" class="seven columns">
+        <ul>
+          <a id="projectName">PROJECT NAME</a>
+          <a id="projectStatus">STATUS</a>
+          <a id="projectTeam">TEAM</a>
+          <a id="projectTech">TECH</a>
+          <a id="projectIdea" href="#">IDEA</a>
+        </ul>
+      </div>
+
+  		<div id="techbar" class="row">
+  			<div id="known-tech" class="one column">
+  				<a href="#">DOCUMENTATION</a></li>
+  			</div>
+  			<div id="learn-tech" class="one column">
+          <a href="#">DOCUMENTATION</a></li>
+  			</div>
+  		</div>
+
+    </div>
 	</main>
 
-	<!-- Footer -->
-	<footer>
-		<button>Sign Out</button>
-	</footer>
+   <!-- Footer
+  –––––––––––––––––––––––––––––––––––––––––––––––––– -->
+  <footer>
+
+    <div class="container">
+      <ul id="footer">
+        <li class="left">&copy; CODESPIRATION <i>Beta</i> 2017. All Rights Reserved.</li>
+        <li class="left" id="learn-more" style="padding-left: 15px;"><a href="./user-about.html"><i>Learn More</i></a></li>
+        <li class="right"><button id="signOut">Sign-Out</button></li>
+      </ul>
+    </div>
+
+  </footer>
+
 </body>
 </html>
