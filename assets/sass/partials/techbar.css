@@ -1,0 +1,21 @@
+    #techbar {
+      position: absolute;
+      top: 95px;
+      right: 0;
+      text-align: center;
+      margin-right: 35px;
+    }
+
+    .dashboard-tech {
+      color: white;
+      font-size: 70px;
+      display: inline-block;
+      padding-left: 20px;
+      padding-right: 20px;
+    }
+
+  .dashboard-tech.fa-none {
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 30px;
+    padding-bottom: 30px
+  }

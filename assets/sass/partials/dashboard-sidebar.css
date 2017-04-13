@@ -1,6 +1,10 @@
+body {
+  background-color: #ccc;
+}
+
 #sidebar {
   position: absolute;
-  background: #ccc;
+  background: grey;
   top: 55px;
   bottom: 0;
   text-align: center;
@@ -20,6 +24,10 @@
 }
 .sidebar-email {
   text-transform: uppercase;
+}
+
+#user-info a {
+  color: white;
 }
 
 @media screen and (max-width: 600px) {

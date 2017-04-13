@@ -16,6 +16,7 @@
   <!-- FONT
   –––––––––––––––––––––––––––––––––––––––––––––––––– -->
   <link href="//fonts.googleapis.com/css?family=Raleway:400,300,600" rel="stylesheet" type="text/css">
+  <script src="https://use.fontawesome.com/e6a19d2877.js"></script>
 
   <!-- CSS
   –––––––––––––––––––––––––––––––––––––––––––––––––– -->
@@ -28,6 +29,8 @@
   <link rel="stylesheet" href="../assets/sass/partials/generator.css">
   <link rel="stylesheet" href="../assets/sass/partials/modal.css">
   <link rel="stylesheet" href="../assets/sass/partials/dashboard-sidebar.css">
+  <link rel="stylesheet" href="../assets/sass/partials/project-list.css">
+  <link rel="stylesheet" href="../assets/sass/partials/techbar.css">
 
   <!-- Scripts
   –––––––––––––––––––––––––––––––––––––––––––––––––– -->
@@ -40,6 +43,8 @@
   <link rel="icon" type="image/png" href="images/favicon.png">
 
   <style>
+    
+
 
   </style>
 
@@ -87,23 +92,34 @@
   			</div>
   		</div>
 
-      <div id="project-list" class="seven columns">
-        <ul>
-          <a id="projectName">PROJECT NAME</a>
-          <a id="projectStatus">STATUS</a>
-          <a id="projectTeam">TEAM</a>
-          <a id="projectTech">TECH</a>
-          <a id="projectIdea" href="#">IDEA</a>
+      <div id="project-list" class="six columns">
+        <ul class="project-tile">
+          <a id="projectName">Project Name
+            <img id="projectStatus" class="active" src="../assets/images/active-status.png"> 
+            <!-- if class is 'active' then src="../assets/images/active-status.png"; if class i 'inactive' then src="../assets/images/inactive-status.png" -->
+          </a>
+          <a id="projectTeam">Team</a>
+          <i id="projectTech" class="fa fa-html5"></i>
+          <i id="projectTech" class="fa fa-css3"></i>
+          <i id="projectTech" class="fa fa-none">MongoDB</i>
+          <!-- Tech stack should be selected from array that Eva previously created for the tech icons from Font Awesome. Right now, there is a placeholder - class="fa fa-html5" and etc. ; class="fa-none" should be selected if there is no fa icon for the technology-->
+          <a id="projectIdea">Idea</a>
         </ul>
       </div>
 
-  		<div id="techbar" class="row">
-  			<div id="known-tech" class="one column">
-  				<a href="#">DOCUMENTATION</a></li>
+  		<div id="techbar" class="three columns">
+  			<div id="known-tech">
+  				<i class="dashboard-tech fa fa-github"></i>
+          <i class="dashboard-tech fa fa-html5"></i>
+          <i class="dashboard-tech fa fa-css3"></i>
+          <i class="dashboard-tech fa fa-jsfiddle"></i>
+          <i class="dashboard-tech fa fa-dribbble"></i>
+          <i class="dashboard-tech fa fa-none">NodeJS</i>
+          <!-- Tech stack should be selected from array that Eva previously created for the tech icons from Font Awesome. Right now, there is a placeholder - class="fa fa-github" and etc. ; class="fa-none" should be selected if there is no fa icon for the technology-->
   			</div>
-  			<div id="learn-tech" class="one column">
-          <a href="#">DOCUMENTATION</a></li>
-  			</div>
+<!--   	<div id="learn-tech">
+          <i class="" href="#"></i>
+  			</div> Omitting Learn-Tech for now...-->
   		</div>
 
     </div>
